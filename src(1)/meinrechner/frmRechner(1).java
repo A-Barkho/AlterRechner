@@ -141,7 +141,7 @@ public class frmRechner extends javax.swing.JFrame {
             am2 = 0;
         }
         System.out.println("Du bist " + aj2 + " Jahre und " + am2 + " Monate und alt");*/
-        //Aktuelles Datum größer
+        //Aktuelles Datum größer als Geburtsdatum
         if (jm >= gm && jt >= gt) {
             aj1 = jj - gj;
             am1 = jm - gm;
@@ -156,7 +156,7 @@ public class frmRechner extends javax.swing.JFrame {
             aj1 = jj - (gj + 1);
             am1 = (12 - (gm+1)+jm);
             at1 = (30 - gt) + jt;
-        }//Aktuellar Monat kleiner aber Tag größer
+        }//Aktuellar Monat kleiner aber Tag größer als die im Geburtsdatum
         else if (jm < gm && jt > gt) {
             aj1 = jj - (gj + 1);
             am1 = (12 - gm) + jm;
