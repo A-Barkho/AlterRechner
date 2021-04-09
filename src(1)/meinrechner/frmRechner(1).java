@@ -141,26 +141,27 @@ public class frmRechner extends javax.swing.JFrame {
             am2 = 0;
         }
         System.out.println("Du bist " + aj2 + " Jahre und " + am2 + " Monate und alt");*/
+        //Aktuelles Datum größer
         if (jm >= gm && jt >= gt) {
             aj1 = jj - gj;
             am1 = jm - gm;
             at1 = jt - gt;
-        }//التاريخ الحالي اكبر
+        }//Aktuellar Monat größer aber Tag kleiner
         else if (jm > gm && jt < gt) {
             aj1 = jj - gj;
             am1 = jm - (gm + 1);
             at1 = (30 - gt) + jt;
-        }//الشهر الحالي اكبر واليوم اصغر ا
+        }//Aktuellar Monat und Tag kleiner
         else if (jm < gm && jt < gt) {
             aj1 = jj - (gj + 1);
             am1 = (12 - (gm+1)+jm);
             at1 = (30 - gt) + jt;
-        }//الشهر الحالي اصغر واليوم اصغر 
+        }//Aktuellar Monat kleiner aber Tag größer
         else if (jm < gm && jt > gt) {
             aj1 = jj - (gj + 1);
             am1 = (12 - gm) + jm;
             at1 = jt - gt;
-        }//الشهر الحالي اصغر واليوم اكبر 
+        }//Aktuellar Monat==Geburtsmonat und akueller Tag kleiner Geburtstag
         else if (jm == gm && jt < gt) {
             aj1 = jj - (gj + 1);
             am1 = (12 - (gm + 1) + jm);
