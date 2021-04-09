@@ -146,7 +146,7 @@ public class frmRechner extends javax.swing.JFrame {
             aj1 = jj - gj;
             am1 = jm - gm;
             at1 = jt - gt;
-        }//Aktuellar Monat größer aber Tag kleiner
+        }//Aktuellar Monat größer aber Aktuellar Tag kleiner als die im Geburtsdatum
         else if (jm > gm && jt < gt) {
             aj1 = jj - gj;
             am1 = jm - (gm + 1);
